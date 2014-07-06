@@ -3,7 +3,7 @@ class User < ActiveRecord::Base
 
 	validates :name, presence: true, length: { minimum: 3, maximum: 10 }
 	validates :email, presence: true format: { with: VALID_EMAIL_REGEX }, uniqueness: { case_sensitive: false }
-	validates :friendcode, presence: true, uniquenesss: true
+	validates :friendcode, presence: true, uniquenesss: true, length: { minimum: 9, maximum: 9 }
 	validates :password, length: { minimum: 6}
 
 
