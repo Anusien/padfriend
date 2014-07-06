@@ -24,4 +24,4 @@ def secure_token
   end
 end
 
-PadFriend::Application.config.secret_key_base = secure_token
+Padfriend::Application.config.secret_key_base = secure_token
