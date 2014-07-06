@@ -17,3 +17,6 @@
 
 # Ignore VIm temporary files
 .*.swp
+
+# Secret token
+.secret
